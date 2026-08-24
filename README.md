@@ -3,6 +3,8 @@
 > 一篇来自真机实战的避坑笔记。别人写「如何安装」，这里写「装完会死在哪、怎么救」。
 >
 > 环境：Android 手机 + Termux + proot（Ubuntu 24）+ DeepSeek Harness（CLI）
+>
+> 📄 **English version**: [article_EN.md](article_EN.md)
 
 ---
 
