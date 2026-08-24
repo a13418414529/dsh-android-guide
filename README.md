@@ -1,8 +1,14 @@
 # DeepSeek Harness 在 Android / Termux / proot 环境踩坑实录
 
+**Running DeepSeek Harness (DSH) on an Android phone — 5 gotchas the official docs never mention, with root causes and fixes.** Full English guide: [article_EN.md](article_EN.md).
+
 > 一篇来自真机实战的避坑笔记。别人写「如何安装」，这里写「装完会死在哪、怎么救」。
 >
 > 环境：Android 手机 + Termux + proot（Ubuntu 24）+ DeepSeek Harness（CLI）
+>
+> 关键坑速览：FUSE hardlink `link()` 禁令 · `DSH_HOME` 未设导致 web 假死 · CLI 三个行为坑 · web 模式在手机不可行 · AI 文生图中文乱码
+>
+> **Keywords**: DeepSeek Harness Android, DSH Termux, proot FUSE link rename, DSH_HOME, headless CLI, AI image Chinese text garbled
 >
 > 📄 **English version**: [article_EN.md](article_EN.md)
 
