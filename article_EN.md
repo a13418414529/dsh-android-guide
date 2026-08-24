@@ -6,6 +6,8 @@ DeepSeek Harness (DSH) officially assumes you're running on "a proper Linux serv
 
 Below are the 5 gotchas, each with the root cause and the fix, documented exactly as I hit them. If you're also fighting DSH inside Android / Termux / proot, this will save you half a day.
 
+![DSH on Android: 5 gotchas at a glance](images/dsh_infographic_EN.svg)
+
 ---
 
 ## Gotcha 1: FUSE doesn't support hard links, so session persistence just dies
