@@ -96,3 +96,13 @@ dsh <subcommand> --resume <session_id>   # ✅ trailing, right after the subcomm
 ---
 
 📌 Full article + more command examples, plus the SVG source: **github.com/a13418414529/dsh-android-guide**
+
+---
+
+## 💛 Support this project
+
+If this guide saved you time, here's how you can support it:
+
+- 🍵 **Buy me a coffee**: **[ko-fi.com/你的用户名](https://ko-fi.com/你的用户名)**
+- ⭐ **Star the repo** — it genuinely helps more people find this guide
+- 💬 **Contribute**: open an Issue / PR with the gotchas you hit in other environments (wsl, docker, native Termux, etc.)
