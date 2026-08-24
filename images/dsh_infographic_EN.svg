@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1750" viewBox="0 0 980 1750" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#121a36"/><stop offset="100%" stop-color="#0b1020"/></linearGradient>
+    <linearGradient id="cardbad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1c1428"/><stop offset="100%" stop-color="#150f1e"/></linearGradient>
+    <linearGradient id="cardgood" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10232a"/><stop offset="100%" stop-color="#0c1a1f"/></linearGradient>
+  </defs>
+  <rect width="980" height="1750" fill="url(#bg)"/>
+  <rect x="24" y="24" width="932" height="1702" rx="22" fill="none" stroke="#2a3b68" stroke-width="2"/>
+  <rect x="54" y="58" width="470" height="46" rx="23" fill="#12304a" stroke="#1e4a6e" stroke-width="1.5"/>
+  <text x="289" y="88" text-anchor="middle" font-size="22" fill="#7dd3fc" letter-spacing="1">DeepSeek Harness · Android Deployment Guide</text>
+  <text x="54" y="170" font-size="48" font-weight="800" fill="#e8eefc" letter-spacing="1">Running DSH on</text>
+  <text x="54" y="232" font-size="48" font-weight="800" fill="#38bdf8" letter-spacing="1">Your Phone: 5 Gotchas</text>
+  <text x="54" y="282" font-size="24" fill="#8aa0c8" letter-spacing="1">Termux + proot · Quick reference · With commands</text>
+  <line x1="54" y1="316" x2="926" y2="316" stroke="#26365f" stroke-width="1.5"/>
+  <rect x="54" y="344" width="420" height="480" rx="16" fill="url(#cardbad)" stroke="#5a2a3a" stroke-width="2"/>
+  <text x="82" y="392" font-size="27" font-weight="700" fill="#fda4af">⚠️ Gotchas I Hit</text>
+  <circle cx="84" cy="418" r="5" fill="#b4546a"/><text x="102" y="426" font-size="21" fill="#c6d4ee">dsh --help blocks, exec's straight</text><text x="102" y="452" font-size="21" fill="#c6d4ee">into headless CLI, not help text</text>
+  <circle cx="84" cy="478" r="5" fill="#b4546a"/><text x="102" y="486" font-size="21" fill="#c6d4ee">headless has no continuous chat,</text><text x="102" y="512" font-size="21" fill="#c6d4ee">every turn starts a fresh session</text>
+  <circle cx="84" cy="538" r="5" fill="#b4546a"/><text x="102" y="546" font-size="21" fill="#c6d4ee">--resume is position-sensitive,</text><text x="102" y="572" font-size="21" fill="#c6d4ee">must trail subcommand, before profile</text>
+  <circle cx="84" cy="598" r="5" fill="#b4546a"/><text x="102" y="606" font-size="21" fill="#c6d4ee">AI-generated diagrams garble Chinese,</text><text x="102" y="632" font-size="21" fill="#c6d4ee">unusable as tutorial figures</text>
+  <circle cx="84" cy="658" r="5" fill="#b4546a"/><text x="102" y="666" font-size="21" fill="#c6d4ee">no plugin subcommand, don't</text><text x="102" y="692" font-size="21" fill="#c6d4ee">drive it like the plugin framework</text>
+  <rect x="506" y="344" width="420" height="480" rx="16" fill="url(#cardgood)" stroke="#1f4a52" stroke-width="2"/>
+  <text x="534" y="392" font-size="27" font-weight="700" fill="#5eead4">✅ The Right Way</text>
+  <circle cx="536" cy="418" r="5" fill="#299c94"/><text x="554" y="426" font-size="21" fill="#c6d4ee">Treat /usr/local/bin/dsh as a</text><text x="554" y="452" font-size="21" fill="#c6d4ee">single-shot Q&amp;A wrapper</text>
+  <circle cx="536" cy="478" r="5" fill="#299c94"/><text x="554" y="486" font-size="21" fill="#c6d4ee">Order: dsh --resume [profile] [q],</text><text x="554" y="512" font-size="21" fill="#c6d4ee">profile right after resume</text>
+  <circle cx="536" cy="538" r="5" fill="#299c94"/><text x="554" y="546" font-size="21" fill="#c6d4ee">Want multi-turn chat? Loop it</text><text x="554" y="572" font-size="21" fill="#c6d4ee">yourself, don't rely on built-in session</text>
+  <circle cx="536" cy="598" r="5" fill="#299c94"/><text x="554" y="606" font-size="21" fill="#c6d4ee">Render diagrams via HTML/CSS + screenshot,</text><text x="554" y="632" font-size="21" fill="#c6d4ee">100% accurate text</text>
+  <circle cx="536" cy="658" r="5" fill="#299c94"/><text x="554" y="666" font-size="21" fill="#c6d4ee">Credentials live in DSH native Web UI,</text><text x="554" y="692" font-size="21" fill="#c6d4ee">script layer never touches keys</text>
+  <line x1="54" y1="860" x2="926" y2="860" stroke="#26365f" stroke-width="1.5"/>
+  <rect x="54" y="888" width="420" height="230" rx="16" fill="#111a34" stroke="#253666" stroke-width="2"/>
+  <text x="82" y="936" font-size="27" font-weight="700" fill="#7dd3fc">🔧 Environment</text>
+  <circle cx="84" cy="962" r="5" fill="#33477e"/><text x="102" y="970" font-size="21" fill="#c6d4ee">Node.js / npm ready</text>
+  <circle cx="84" cy="998" r="5" fill="#33477e"/><text x="102" y="1006" font-size="18" fill="#7dd3fc" font-family="monospace">exec node apps/cli/lib/bin.js</text><text x="102" y="1032" font-size="18" fill="#7dd3fc" font-family="monospace">--profile headless</text>
+  <circle cx="84" cy="1060" r="5" fill="#33477e"/><text x="102" y="1068" font-size="21" fill="#c6d4ee">Android 15 · Termux · proot</text>
+  <rect x="506" y="888" width="420" height="230" rx="16" fill="#111a34" stroke="#253666" stroke-width="2"/>
+  <text x="534" y="936" font-size="27" font-weight="700" fill="#7dd3fc">📌 Bottom Line</text>
+  <circle cx="536" cy="962" r="5" fill="#33477e"/><text x="554" y="970" font-size="21" fill="#c6d4ee">DSH headless = lightweight one-shot</text><text x="554" y="996" font-size="21" fill="#c6d4ee">Q&amp;A, not a chatbot</text>
+  <circle cx="536" cy="1022" r="5" fill="#33477e"/><text x="554" y="1030" font-size="21" fill="#c6d4ee">Skip AI image gen for diagrams —</text><text x="554" y="1056" font-size="21" fill="#c6d4ee">code layout is the correct fix</text>
+  <text x="490" y="1195" text-anchor="middle" font-size="20" fill="#6177a5" letter-spacing="1">DeepSeek Harness · Android Pitfalls | github.com/a13418414529/dsh-android-guide</text>
+</svg>
