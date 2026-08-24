@@ -1,6 +1,6 @@
 # DeepSeek Harness 在 Android / Termux / proot 环境踩坑实录
 
-**Running DeepSeek Harness (DSH) on an Android phone — 5 gotchas the official docs never mention, with root causes and fixes.** Full English guide: [article_EN.md](article_EN.md).
+**Running DeepSeek Harness (DSH) on an Android phone — 5 gotchas the official docs never mention, with root causes and fixes.** Full English guide: [article_EN.md](article_EN.md) · [Dev.to](https://dev.to/a13418414529/running-deepseek-harness-on-an-android-phone-5-gotchas-the-official-docs-never-mention-1o9m).
 
 > 一篇来自真机实战的避坑笔记。别人写「如何安装」，这里写「装完会死在哪、怎么救」。
 >
@@ -10,7 +10,7 @@
 >
 > **Keywords**: DeepSeek Harness Android, DSH Termux, proot FUSE link rename, DSH_HOME, headless CLI, AI image Chinese text garbled
 >
-> 📄 **English version**: [article_EN.md](article_EN.md)
+> 📄 **English version**: [article_EN.md](article_EN.md) · **Dev.to article**: https://dev.to/a13418414529/running-deepseek-harness-on-an-android-phone-5-gotchas-the-official-docs-never-mention-1o9m
 
 ---
 
