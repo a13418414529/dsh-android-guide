@@ -75,9 +75,9 @@ dsh <subcommand> --resume <session_id>   # ✅ 靠后、紧跟子命令
 
 ---
 
-## 一张图看懂四个坑
+## 一张图看懂核心踩坑
 
-![DSH 四个坑一张图](images/dsh_pitfalls_infographic.svg)
+![DSH 核心踩坑速查图](images/dsh_infographic.svg)
 
 ---
 
